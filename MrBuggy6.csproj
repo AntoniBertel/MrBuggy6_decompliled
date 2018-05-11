@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Projects\saving_cup\MrBuggy6_demo\MrBuggy6.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECA6DB70-5477-40EF-A851-5F3AFCB2FA7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>MrBuggy6</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.2.10</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MrBuggy6\DefectsForm.cs" />
+    <Compile Include="MrBuggy6\EndForm.cs" />
+    <Compile Include="MrBuggy6\DefectForm.cs" />
+    <Compile Include="MrBuggy6\HelpForm.cs" />
+    <Compile Include="MrBuggy6\LoginForm.cs" />
+    <Compile Include="MrBuggy6\MainForm.cs" />
+    <Compile Include="MrBuggy6\Program.cs" />
+    <Compile Include="MrBuggy6\ReportForm.cs" />
+    <Compile Include="MrBuggy6\Settings.cs" />
+    <Compile Include="MrBuggy6\UnlockCompetitionForm.cs" />
+    <Compile Include="MrBuggy6\Properties\Resources.cs" />
+    <Compile Include="MrBuggy6\Properties\Settings.cs" />
+    <Compile Include="MrBuggy6\Custom\Cryptography.cs" />
+    <Compile Include="MrBuggy6\Custom\Text.cs" />
+    <Compile Include="MrBuggy6\Core\Action.cs" />
+    <Compile Include="MrBuggy6\Core\Cryptography.cs" />
+    <Compile Include="MrBuggy6\Core\Defect.cs" />
+    <Compile Include="MrBuggy6\Core\IActionsContainer.cs" />
+    <Compile Include="MrBuggy6\Core\IssueRequestType.cs" />
+    <Compile Include="MrBuggy6\Core\IssueRequest.cs" />
+    <Compile Include="MrBuggy6\Core\ReportFileStatus.cs" />
+    <Compile Include="MrBuggy6\Core\ReportFile.cs" />
+    <Compile Include="MrBuggy6\Core\Issue.cs" />
+    <Compile Include="MrBuggy6\Core\IssueAttr1.cs" />
+    <Compile Include="MrBuggy6\Core\IssueAttr2.cs" />
+    <Compile Include="MrBuggy6\Core\IssueAttr3.cs" />
+    <Compile Include="MrBuggy6\Core\Report.cs" />
+    <Compile Include="MrBuggy6\Core\IssueTask.cs" />
+    <Compile Include="MrBuggy6\Core\User.cs" />
+    <Compile Include="MrBuggy6\Core\ViewEvent.cs" />
+    <Compile Include="MrBuggy6\Core\View.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerConnectionChangeStatusEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerIdentifyCompletedEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerAddIssueToFileCompletedEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerSaveIssueToFileCompletedEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerDeleteIssueFromFileCompletedEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerSaveReportToFileCompletedEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerSaveIssueOnServerCompletedEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerDeleteIssueFromServerCompletedEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerSaveReportOnServerCompletedEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ManagerEndCompetitionEvent.cs" />
+    <Compile Include="MrBuggy6\Core\ConnetcionStatus.cs" />
+    <Compile Include="MrBuggy6\Core\CompetitionManager.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Page1View.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\Client.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\Employee.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\OpportunityStage.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\LostReason.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\Opportunity.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\Project.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\Service.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\UserRole.cs" />
+    <Compile Include="MrBuggy6\Core\Views\Classes\User.cs" />
+    <Compile Include="Custom\Net\WebService.cs" />
+    <Compile Include="Custom\Net\WebServiceQueueRequest.cs" />
+    <Compile Include="Custom\Net\WebServiceQueueRequestCompletedArgs.cs" />
+    <Compile Include="Custom\Net\WebServiceQueueRequestBeforeSendDelegate.cs" />
+    <Compile Include="Custom\Net\WebServiceQueueRequestCompletedDelegate.cs" />
+    <Compile Include="Custom\Net\WebServiceQueueRequests.cs" />
+    <Compile Include="Custom\Net\WebServiceRequestBeforeSendDelegate.cs" />
+    <Compile Include="Custom\Net\WebServiceRequestCompletedDelegate.cs" />
+    <Compile Include="Custom\Net\WebServiceRequest.cs" />
+    <Compile Include="Custom\Net\WebServiceRequestBeforeRepeatArgs.cs" />
+    <Compile Include="Custom\Net\WebServiceRequestCompletedArgs.cs" />
+    <Compile Include="Custom\Component\IListViewComparer.cs" />
+    <Compile Include="Custom\Component\ListViewComparer.cs" />
+    <Compile Include="Custom\Component\ListViewExtensions.cs" />
+    <Compile Include="Custom\Component\ListViewNumberComparer.cs" />
+    <Compile Include="Custom\Component\ListViewTextComparer.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MrBuggy6\DefectForm.resx" />
+    <EmbeddedResource Include="MrBuggy6\DefectsForm.resx" />
+    <EmbeddedResource Include="MrBuggy6\EndForm.resx" />
+    <EmbeddedResource Include="MrBuggy6\HelpForm.resx" />
+    <EmbeddedResource Include="MrBuggy6\LoginForm.resx" />
+    <EmbeddedResource Include="MrBuggy6\MainForm.resx" />
+    <EmbeddedResource Include="MrBuggy6\Properties\Resources.resx" />
+    <EmbeddedResource Include="MrBuggy6\ReportForm.resx" />
+    <EmbeddedResource Include="MrBuggy6\UnlockCompetitionForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
